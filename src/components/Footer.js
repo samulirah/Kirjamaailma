@@ -1,11 +1,12 @@
 import React from 'react'
 import './footer.css'
-import kirjamaailmalogo from './kirjamaailmalogo.png'
 
 export default function Footer() {
-  return (
-    <footer>
-      <span>&copy; Ryhmä 2B</span>
-    </footer>
-  )
+    return (
+        <footer className='footer'>
+            <div className='container-fluid'>
+                <span>&copy; Ryhmä 2B</span>
+            </div>
+        </footer>
+    )
 }
