@@ -9,14 +9,14 @@ import Products from './pages/Products';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 
-
+// const URL = 'http://localhost:8888/kirjamaailma/'; << TARKISTA TIETOKANNAN NIMI KUN SE ON TEHTY
 
 function App() {
   return (
     <>
       <div className='container-fluid'>
         <Header />
-        <Navbar />
+        <Navbar url={URL} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<Products />} />
