@@ -11,8 +11,8 @@ export default function Home() {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src={books} className="d-block w-100" alt="books" />
+                <div className="carousel-item active" >
+                    <img src={books} className="d-block w-100" alt="books"/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Joulu lähestyy!</h5>
                         <p>Hanki nyt joulun toivotuimmat kirjalahjat pukinkonttiin.</p>

@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './tuotesivu.css'
+import '../components/tuotesivu.css'
 
 
 export default function tuotesivu() {
