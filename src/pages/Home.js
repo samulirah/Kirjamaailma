@@ -2,8 +2,6 @@ import React from 'react'
 import '../components/pages.css'
 import books from '../components/books.jpg'
 import glass from '../components/glass.jpg'
-import reading from '../components/reading.jpg'
-
 import shelf from '../components/shelf.jpg'
 
 export default function Home() {
@@ -19,7 +17,7 @@ export default function Home() {
             <div className="carousel-inner">
 
                 <div className="carousel-item active">
-                    <img src={books} className="d-block w-100" alt="books" />
+                    <img src={books} className="d-block w-100" alt="books"/>
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Joulu lähestyy!</h5>
                         <p>Hanki nyt joulun toivotuimmat kirjalahjat pukinkonttiin.</p>
@@ -27,7 +25,7 @@ export default function Home() {
                 </div>
 
                 <div className="carousel-item active1">
-                    <img src={shelf} className="d-block w-100" alt="glass" />
+                    <img src={shelf} className="d-block w-100" alt="shelf"/>
                     <div className="carousel-caption d-none d-md-block"></div>
                    
                         <h5></h5>
@@ -36,8 +34,7 @@ export default function Home() {
             
             
               <div className="carousel-item active2">
-                    <img src={glass} className="d-block w-100" alt="glass" />
-                    <div class="d-flex p-2">I'm a flexbox container!</div>
+                    <img src={glass} className="d-block w-100" alt="glass"/>
                     <div className="carousel-caption d-none d-md-block"></div>
                     
               </div>

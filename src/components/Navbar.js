@@ -20,7 +20,7 @@ export default function Navbar({ url }) {
                 
                 <div class="d-flex justify-content-end"></div>
 
-                <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div className="offcanvas offcanvas-end text-bg-dark" tabIndex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title" id="offcanvasNavbar2Label">Kirjamaailma</h5>
                         <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -50,7 +50,7 @@ export default function Navbar({ url }) {
                             </li>
 
                             <div className='buttons'>
-                                <a href='' className='btn btn-outline-light'><FiLogIn /> <i className='fa fa-sign-in me-1'></i>Kirjaudu</a>
+                                <a href='http://localhost:3000/login' className='btn btn-outline-light'><FiLogIn /> <i className='fa fa-sign-in me-1'></i>Kirjaudu</a>
                             </div>
 
                         </ul>
@@ -65,19 +65,3 @@ export default function Navbar({ url }) {
         </nav>
     )
 }
-
-
-/*<li className="nav-item">
-                                <Link className="nav-link active" to="">
-                                    <i className="fa fa-sign-in me-1"></i>Kirjaudu</Link>
-                            </li>*/
-
-
-/* <div class="right">
- <ul class ="flexitem second-links">
-     <li><a href ="#"></a>
-     <div class ="icon-large"><i class = "ri-heart-line"></i></div>
-     <div class ="fly-item"><span class = "item-number"></span></div>
-     </li>
- </ul>
-    </div>    */

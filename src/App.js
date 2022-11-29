@@ -8,7 +8,8 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import data from './components/data';
+import Tuotesivu from './pages/tuotesivu';
+
 
 // const URL = 'http://localhost:8888/kirjamaailma/'; << TARKISTA TIETOKANNAN NIMI KUN SE ON TEHTY
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<Products />} />
           <Route path='/about' element={<About />} />
+          <Route path='/tuotesivu' element={<Tuotesivu />} />
           <Route path='*' element={<NotFound />} />
         
         </Routes>
