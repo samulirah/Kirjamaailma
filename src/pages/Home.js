@@ -37,10 +37,10 @@ export default function Home() {
             
               <div className="carousel-item active2">
                     <img src={glass} className="d-block w-100" alt="glass" />
+                    <div class="d-flex p-2">I'm a flexbox container!</div>
                     <div className="carousel-caption d-none d-md-block"></div>
-                    <h5>t</h5>
-                        <p></p>
-                    </div>
+                    
+              </div>
                 
             </div>
 
