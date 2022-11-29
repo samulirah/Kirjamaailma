@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import { FiLogIn } from 'react-icons/fi';
+import { HiOutlineShoppingCart } from 'react-icons/hi';
+import { BiCategory } from 'react-icons/bi';
 
-export default function Navbar({url}) {
+
+
+
+export default function Navbar({ url }) {
     return (
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
@@ -20,26 +26,33 @@ export default function Navbar({url}) {
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tuotteet
+                                    <BiCategory /> Kategoria
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="">Action</Link></li>
-                                    <li><Link className="dropdown-item" to="">Another action</Link></li>
+                                    <li><Link className="dropdown-item" to="">Lastenkirjat</Link></li>
+                                    <li><Link className="dropdown-item" to="">Kaunokirjallisuus</Link></li>
+                                    <li><Link className="dropdown-item" to="">Tietokirjat</Link></li>
+                                    <li><Link className="dropdown-item" to="">Oppikirjat</Link></li>
+                                    <li><Link className="dropdown-item" to="">Pelit</Link></li>
+
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
                                     <li><Link className="dropdown-item" to="">Something else here</Link></li>
                                 </ul>
                             </li>
+
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="">Ostoskori</Link>
+                             <Link className="nav-link active" aria-current="page" to=""><HiOutlineShoppingCart /> Ostoskori</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active" to="">Kirjaudu</Link>
-                            </li>
+
+                            <div className='buttons'>
+                                <a href='' className='btn btn-outline-light'><FiLogIn /> <i className='fa fa-sign-in me-1'></i>Kirjaudu</a>
+                            </div>
 
                         </ul>
                         <form className="d-flex mt-3 mt-lg-0" role="search">
+            
                             <input className="form-control me-2" type="search" placeholder="Hae kaupasta.." aria-label="Search" id="öö" />
                             <button className="btn btn-outline-light" type="submit">Etsi</button>
                         </form>
@@ -49,3 +62,19 @@ export default function Navbar({url}) {
         </nav>
     )
 }
+
+
+/*<li className="nav-item">
+                                <Link className="nav-link active" to="">
+                                    <i className="fa fa-sign-in me-1"></i>Kirjaudu</Link>
+                            </li>*/
+
+
+/* <div class="right">
+ <ul class ="flexitem second-links">
+     <li><a href ="#"></a>
+     <div class ="icon-large"><i class = "ri-heart-line"></i></div>
+     <div class ="fly-item"><span class = "item-number"></span></div>
+     </li>
+ </ul>
+    </div>    */

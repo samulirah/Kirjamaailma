@@ -3,3 +3,4 @@
     font-family: 'DM Serif Display', serif;
 
 }
+  .carousel-inner, .carousel-item { width:1250px; height:700px; }
