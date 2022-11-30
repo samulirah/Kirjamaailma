@@ -5,7 +5,7 @@ import { FiLogIn } from 'react-icons/fi';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { BiCategory } from 'react-icons/bi';
 
-// npm install react-icons
+/* Aja tämä koodi -- npm install react-icons*/
 
 
 

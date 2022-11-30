@@ -80,7 +80,7 @@ export default function Home() {
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
+                <span className="visually-hiddenn">Next</span>
             </button>
         </div>
 
