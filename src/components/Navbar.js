@@ -5,6 +5,8 @@ import { FiLogIn } from 'react-icons/fi';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 import { BiCategory } from 'react-icons/bi';
 
+// npm install react-icons
+
 
 
 
@@ -41,7 +43,7 @@ export default function Navbar({ url }) {
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
-                                    <li><Link className="dropdown-item" to="">Something else here</Link></li>
+                                    <li><Link className="dropdown-item"  to="">Something else here</Link></li>
                                 </ul>
                             </li>
 
@@ -65,3 +67,4 @@ export default function Navbar({ url }) {
         </nav>
     )
 }
+
