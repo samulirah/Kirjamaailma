@@ -8,10 +8,10 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import Tuotesivu from './pages/tuotesivu';
+import Tuotesivu from './pages/Tuotesivu';
 
 
-// const URL = 'http://localhost:8888/kirjamaailma/'; << TARKISTA TIETOKANNAN NIMI KUN SE ON TEHTY
+const URL = 'http://localhost:8888/kirjamaailma/';
 
 function App() {
   return (
