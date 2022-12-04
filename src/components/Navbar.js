@@ -7,6 +7,8 @@ import './navbar.css'
 //import { HiOutlineShoppingCart } from 'react-icons/hi';
 //import { BiCategory } from 'react-icons/bi';
 
+/* Aja tämä koodi -- npm install react-icons*/
+
 
 
 
@@ -54,6 +56,10 @@ export default function Navbar({ url }) {
                                             </Link>}
                                         </li>
                                     ))}
+                                    <li>
+                                        <hr className="dropdown-divider" />
+                                    </li>
+                                    <li><Link className="dropdown-item"  to="">Something else here</Link></li>
                                 </ul>
                             </li>
 
@@ -77,3 +83,4 @@ export default function Navbar({ url }) {
         </nav>
     )
 }
+
