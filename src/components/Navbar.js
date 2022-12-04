@@ -2,17 +2,18 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import Cart from './Cart';
 
-//import { FiLogIn } from 'react-icons/fi';
-//import { HiOutlineShoppingCart } from 'react-icons/hi';
-//import { BiCategory } from 'react-icons/bi';
+import { FiLogIn } from 'react-icons/fi';
+import { BiCategory } from 'react-icons/bi';
+import { BiSearch } from 'react-icons/bi'
 
 /* Aja tämä koodi -- npm install react-icons*/
 
 
 
 
-export default function Navbar({ url }) {
+export default function Navbar({ url, cart }) {
 
     const [categories, setCategories] = useState([]);
 
@@ -46,7 +47,7 @@ export default function Navbar({ url }) {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tuotteet</a>
+                                <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><BiCategory/> Tuotteet</a>
                                 <ul className="dropdown-menu">
                                     {categories.map(category => (
                                         <li key={category.trnro}>
@@ -59,23 +60,23 @@ export default function Navbar({ url }) {
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
-                                    <li><Link className="dropdown-item"  to="">Something else here</Link></li>
+                                    <li><Link className="dropdown-item"  to="">Kaikki tuotteet</Link></li>
                                 </ul>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="">Ostoskori</Link>
+                                <Link className="nav-link active" aria-current="page" to="/Cart"> <Cart cart={cart}/>&nbsp;&nbsp;Ostoskori</Link>
                             </li>
 
-                            <div className='buttons'>
-                                <Link className='btn btn-outline-light' to="/login"><i className='fa fa-sign-in me-1'></i>Kirjaudu</Link>
+                            <div className='nav-item'>
+                                <Link className='nav-link active' aria-current="page" to="/login"><i className='fa fa-sign-in me-1'></i> <FiLogIn/>   Kirjaudu</Link>
                             </div>
 
                         </ul>
                         <form className="d-flex mt-3 mt-lg-0" role="search">
 
                             <input className="form-control me-2" type="search" placeholder="Hae kaupasta.." aria-label="Search" id="öö" />
-                            <button className="btn btn-outline-light" type="submit">Etsi</button>
+                            <button className="btn btn-outline-light" type="submit"><BiSearch/></button>
                         </form>
                     </div>
                 </div>

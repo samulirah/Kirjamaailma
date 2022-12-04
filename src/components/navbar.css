@@ -3,3 +3,8 @@ nav {
     font-family: 'DM Serif Display', serif;
     bottom: 10px;
 }
+
+.nav-item, .buttons, .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}

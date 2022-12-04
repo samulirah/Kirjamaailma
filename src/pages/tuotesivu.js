@@ -3,7 +3,7 @@ import React from 'react'
 import '../components/tuotesivu.css'
 
 
-export default function tuotesivu() {
+export default function tuotesivu({addToCart}) {
     return (
       
          <div>
@@ -21,7 +21,7 @@ export default function tuotesivu() {
                         <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
                         <div className="d-flex">
                             <input className="form-control text-center me-3" id="inputQuantity" type="num" value="1" style={{ maxwidth: "3rem" }} />
-                            <button className="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button className="btn btn-outline-dark flex-shrink-0" type="button" onClick={e => addToCart(/*parametri?*/)}>
                                 <i className="bi-cart-fill me-1"></i>
                                 Lisää koriin
                             </button>

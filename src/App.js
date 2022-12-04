@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { useState } from 'react';
 
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -14,16 +15,23 @@ import Tuotesivu from './pages/Tuotesivu';
 const URL = 'http://localhost/kirjamaailma/';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  function addToCart(product) {
+    const newCart = [...cart, product];
+    setCart(newCart);
+    localStorage.setItem('cart', JSON.stringify(newCart));
+  }
   return (
     <>
       <div className='container-fluid'>
         <Header />
-        <Navbar url={URL} />
+        <Navbar url={URL} cart={cart} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/products' element={<Products />} />
+          <Route path='/products/:categoryId' element={<Products url={URL} />} />
+          <Route path='/tuotesivu' element={<Tuotesivu addToCart={addToCart}/>} />
           <Route path='/about' element={<About />} />
-          <Route path='/tuotesivu' element={<Tuotesivu />} />
           <Route path='*' element={<NotFound />} />
         
         </Routes>
