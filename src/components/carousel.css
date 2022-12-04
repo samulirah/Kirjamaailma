@@ -1,0 +1,13 @@
+.carousel {
+    height: 300px;
+
+}
+
+.image {
+    position: absolute;
+    overflow: hidden;
+}
+
+.carousel-inner, .carousel-item {
+    height: 300px;
+}

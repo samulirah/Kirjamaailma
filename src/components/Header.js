@@ -5,7 +5,7 @@ import kirjamaailmalogo from './kirjamaailmalogo.png'
 export default function Header() {
   return (
     <div>
-      <img src={kirjamaailmalogo} alt='logo'></img>
+      <img className="logo" src={kirjamaailmalogo} alt='logo'></img>
     </div>
   )
 }
