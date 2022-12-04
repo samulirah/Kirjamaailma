@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 import Tuotesivu from './pages/Tuotesivu';
 
 
-const URL = 'http://localhost:8888/kirjamaailma/';
+const URL = 'http://localhost/kirjamaailma/';
 
 function App() {
   return (
