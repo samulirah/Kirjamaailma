@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../components/products.css'
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
 
 export default function Products({ url, addToCart }) {
@@ -40,7 +40,7 @@ export default function Products({ url, addToCart }) {
                   </div>
                   <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div className="text-center">
-                      <a className="btn btn-outline-dark mt-auto" href="#">Lisätiedot</a>
+                      <Link className="btn btn-outline-dark mt-auto" to={'../tuotesivu/' + product.tuotenro}>Lisätiedot</Link>
                       <button className='btn btn-outline-dark mt-auto' type="button" onClick={e => addToCart(product)}><HiOutlineShoppingCart />  Lisää ostoskoriin</button>
                     </div>
                   </div>
