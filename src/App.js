@@ -13,7 +13,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 
 
-
+// Kirjamaailma
 const URL = 'http://localhost/kirjamaailma/';
 
 function App() {
