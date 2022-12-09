@@ -22,11 +22,11 @@ export default function Tuotesivu({ addToCart, url }) {
 
     return (
         <div>
+            {product.map(product => (
+            <div key={product.tuotenro}>
             <section className="py-5">
                 <div className="container px-4 px-lg-5 my-5">
                     <div className="row gx-4 gx-lg-5 align-items-center">
-                        {product.map(product => (
-                            <div key={product.tuotenro}>
                                 <div className="col-6"><img className="card-img-top mb-5 mb-md-0" src={url + 'images/' + product.trnro + '/' + product.kuva} alt="tuotekuva" id="tuotekuva" />
                                 </div>
                                 <div className="col-6">
@@ -45,10 +45,10 @@ export default function Tuotesivu({ addToCart, url }) {
                                     </div>
                                 </div>
                             </div>
-                        ))}
                     </div>
-                </div>
             </section>
+            </div>
+            ))}
             {/* Samantapaiset tuotteet*/}
             <section className="py-5 bg-light">
                 <div className="container px-4 px-lg-5 mt-5">
