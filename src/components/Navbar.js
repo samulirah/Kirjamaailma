@@ -57,11 +57,7 @@ export default function Navbar({ url, cart }) {
                                                 to={'/products/' + category.trnro}>{category.trnimi}
                                             </Link>}
                                         </li>
-                                    ))}
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li><Link className="dropdown-item" to="">Kaikki tuotteet</Link></li>
+                                    ))} 
                                 </ul>
                             </li>
 
