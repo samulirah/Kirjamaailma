@@ -29,9 +29,9 @@ export default function Products({ url, addToCart }) {
         <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-5 justify-content-center">
           {products.map(product => (
             <div key={product.tuotenro}>
-              <div className="col mb-5">
+              <div className="col mb-5" id="products-col">
                 <div className="card h-100">
-                  <img className="card-img-top" src={url + 'images/' + product.trnro + '/' + product.kuva} alt="tuotekuva" />
+                  <img className="card-img-top" id="products" src={url + 'images/' + product.trnro + '/' + product.kuva} alt="tuotekuva" />
                   <div className="card-body p-4">
                     <div className="text-center">
                       <h5 className="fw-bolder">{product.tuotenimi}</h5>

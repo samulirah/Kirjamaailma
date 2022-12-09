@@ -1,11 +1,12 @@
-.card-img-top {
+#products {
     height: 250px;
+    width: 205px;
 } 
 
 .btn {
     margin-bottom: 10px;
 }
 
-.col {
+#products-col {
     height: 550px;
-}
+} 

@@ -27,8 +27,9 @@ export default function Tuotesivu({ addToCart, url }) {
                     <div className="row gx-4 gx-lg-5 align-items-center">
                         {product.map(product => (
                             <div key={product.tuotenro}>
-                                <div className="col"><img className="card-img-top mb-5 mb-md-0" src={url + 'images/' + product.trnro + '/' + product.kuva} alt="tuotekuva" /></div>
-                                <div className="col">
+                                <div className="col-6"><img className="card-img-top mb-5 mb-md-0" src={url + 'images/' + product.trnro + '/' + product.kuva} alt="tuotekuva" id="tuotekuva" />
+                                </div>
+                                <div className="col-6">
                                     <h1 className="display-5 fw-bolder">{product.tuotenimi}</h1>
                                     <div className="fs-5 mb-5">
                                         <span className="text-decoration-line-through">{product.hinta}  €</span>
