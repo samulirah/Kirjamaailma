@@ -31,6 +31,21 @@ function App() {
     setCart(newCart);
     localStorage.setItem('cart', JSON.stringify(newCart));
   }
+
+  function removeFromCart(product) {
+    const itemsWithoutRemoved = cart.filter(item => item.id !== product.id);
+    setCart(itemsWithoutRemoved);
+    localStorage.setItem('cart',JSON.stringify(itemsWithoutRemoved));
+  }
+
+  function updateAmount(amount,product) {
+    product.amount = amount;
+    const index = cart.findIndex((item => item.id === product.id));
+    const modifiedCart = Object.assign([...cart],{[index]: product});
+    setCart(modifiedCart);
+    localStorage.setItem('cart',JSON.stringify(modifiedCart));
+  }
+
   return (
     <>
       <div className='container-fluid'>
@@ -40,7 +55,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart} />} />
           <Route path='/tuotesivu/:productId' element={<Tuotesivu url={URL} addToCart={addToCart}/>} />
-          <Route path='/order' element={<Order cart={cart}/>} />
+          <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/>} />
           <Route path='/about' element={<About />} />
           <Route path='*' element={<NotFound />} />  
         </Routes>
