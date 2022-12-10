@@ -32,10 +32,9 @@ export default function Tuotesivu({ addToCart, url }) {
                                 <div className="col-6">
                                     <h1 className="display-5 fw-bolder">{product.tuotenimi}</h1>
                                     <div className="fs-5 mb-5">
-                                        <span className="text-decoration-line-through">{product.hinta}  €</span>
-                                        <span>40.00€</span>
+                                        <span>{product.hinta}€</span>
                                     </div>
-                                    <p className="lead">Osta tästä {product.tuotenimi} -tuote.</p>
+                                    <p className="lead">{/* Kirjoitetaanko tähän jotakin tekstiä? */}</p>
                                     <div className="d-flex">
                                         <input className="form-control text-center me-3" id="inputQuantity" type="num" value="1" style={{ maxwidth: "3rem" }} />
                                         <button className="btn btn-outline-dark flex-shrink-0" type="button" onClick={e => addToCart(product)}>
